@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_background">
+    android:background="@drawable/background">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,7 +12,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="이 앱은 오버워치 실력을 '정확'하게 측정하기위해 제작되었습니다.\n\n경쟁전에서 팀원의 트롤때문에 정확하게 측정하지 못한 당신의 진짜 티어를 측정해줍니다.\n\n재미있게 해주세요!\n\n(문제의 배점은 제작자의 주관이 포함되어있습니다.) "
+            android:text="이 앱은 리그오브레전드 실력을 '정확'하게 측정하기위해 제작되었습니다.\n\n랭크게임에서 팀원의 트롤때문에 정확하게 측정하지 못한 당신의 진짜 티어를 측정해줍니다.\n\n재미있게 해주세요!\n\n(문제의 배점은 제작자의 주관이 포함되어있습니다.) "
             android:textSize="@dimen/question_text_size"/>
 
         <TextView
