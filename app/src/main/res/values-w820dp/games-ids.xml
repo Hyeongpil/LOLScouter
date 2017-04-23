@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="package_name">com.hyeongpil.lolscouter</string>
+    <string name="achievement_bronze">CgkI56rslNQCEAIQAQ</string>
+    <string name="achievement_silver">CgkI56rslNQCEAIQAg</string>
+    <string name="achievement_gold">CgkI56rslNQCEAIQAw</string>
+    <string name="achievement_platinum">CgkI56rslNQCEAIQBA</string>
+    <string name="achievement_diamond">CgkI56rslNQCEAIQBQ</string>
+    <string name="achievement_challenger">CgkI56rslNQCEAIQBg</string>
+</resources>

@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/intro"
-    tools:context="com.hyeongpil.overscouter.IntroActivity">
+    tools:context="com.hyeongpil.lolscouter.IntroActivity">
 
     <FrameLayout
         android:id="@+id/fl_intro_achieve_container"
@@ -22,7 +22,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="450dp"
         android:text="시작하기"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:textSize="30dp"/>
 </RelativeLayout>

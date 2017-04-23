@@ -34,7 +34,7 @@ public class Stage_13_Activity extends BaseActivity {
         container.setLayoutResource(R.layout.activity_stage13);
         View containView = container.inflate();
         ButterKnife.bind(this);
-        setAd();
+//        setAd();
     }
 
     @OnClick(R.id.tv_one)
@@ -100,7 +100,8 @@ public class Stage_13_Activity extends BaseActivity {
 
         Log.e(TAG,"tear :"+tear);
 
-        showInterstitial();
+        tearIntent();
+//        showInterstitial();
     }
 
     private void showInterstitial() {

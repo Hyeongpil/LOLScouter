@@ -84,7 +84,7 @@ public class TearActivity extends BaseGameActivity {
 
         switch (tear){
             case "bronze":
-                setTearData(ContextCompat.getDrawable(this,R.drawable.bronze), "브론즈", "정말 정확한 측정이었습니다! 게임을 즐기며 하는 당신은 분명 현실의 승리자입니다.");
+                setTearData(ContextCompat.getDrawable(this, R.drawable.bronze), "브론즈", "정말 정확한 측정이었습니다! 게임을 즐기며 하는 당신은 분명 현실의 승리자입니다.");
                 kakaoStr = "제 실력측정 결과는 브론즈입니다. 브론즈라고 무시하지 말고 한번 해보세요!";
                 kakaoImgSrc = "http://i.imgur.com/475Ukv6.png";
                 if(isGoogleConn)
@@ -119,56 +119,49 @@ public class TearActivity extends BaseGameActivity {
                     Games.Achievements.unlock(mGoogleApiClient,getString(R.string.achievement_diamond));
                 break;
             case "master":
-                setTearData(ContextCompat.getDrawable(this,R.drawable.master), "마스터", "모두가 인정합니다. '마스터' 당신은 지배자입니다.");
+                setTearData(ContextCompat.getDrawable(this,R.drawable.challenger), "마스터", "모두가 인정합니다. '마스터' 당신은 지배자입니다.");
                 kakaoStr = "제 실력측정 결과는 마스터입니다. 과연 저보다 잘할 수 있을까요?";
                 kakaoImgSrc = "http://i.imgur.com/t1QXel0.png";
                 if(isGoogleConn)
-                    Games.Achievements.unlock(mGoogleApiClient,getString(R.string.achievement_master));
+                    Games.Achievements.unlock(mGoogleApiClient,getString(R.string.achievement_challenger));
                 break;
-            case "grand":
-                setTearData(ContextCompat.getDrawable(this,R.drawable.grandmaster), "그랜드마스터", "축하합니다! 오버워치의 '정점'에 올라섰습니다! 정상적인 일상생활을 하고 계신가요..?");
-                kakaoStr = "제 실력측정 결과는 그랜드마스터입니다. 축하합니다! 오버워치의 '정점'입니다!";
-                kakaoImgSrc = "http://i.imgur.com/kdaVht0.png";
-                if(isGoogleConn)
-                    Games.Achievements.unlock(mGoogleApiClient,getString(R.string.achievement_grandmaster));
-                break;
-            case "tracer":
-                setTearData(ContextCompat.getDrawable(this,R.drawable.tracer), "시간역행", "설마 다 찍으셨나요?! 시간을 역행해서 다시 풀어보세요!");
-                kakaoStr = "다 찍어버렸습니다. 다시 풀어보세요!";
-                kakaoImgSrc = "http://i.imgur.com/KIMTsYp.png";
-                if(isGoogleConn)
-                    Games.Achievements.unlock(mGoogleApiClient,getString(R.string.achievement_tracer));
-                break;
+//            case "tracer":
+//                setTearData(ContextCompat.getDrawable(this,R.drawable.tracer), "시간역행", "설마 다 찍으셨나요?! 시간을 역행해서 다시 풀어보세요!");
+//                kakaoStr = "다 찍어버렸습니다. 다시 풀어보세요!";
+//                kakaoImgSrc = "http://i.imgur.com/KIMTsYp.png";
+//                if(isGoogleConn)
+//                    Games.Achievements.unlock(mGoogleApiClient,getString(R.string.achievement_tracer));
+//                break;
             case "sombra":
-                setTearData(ContextCompat.getDrawable(this,R.drawable.sombra), "솜브라", "¿Me extrañaste?");
+                setTearData(ContextCompat.getDrawable(this,R.drawable.challenger), "솜브라", "¿Me extrañaste?");
                 kakaoStr = "솜브라를 찾았습니다!";
                 kakaoImgSrc = "http://i.imgur.com/gkzI7BA.png";
-                if(isGoogleConn)
-                    Games.Achievements.unlock(mGoogleApiClient,getString(R.string.achievement_sombra));
+//                if(isGoogleConn)
+//                    Games.Achievements.unlock(mGoogleApiClient,getString(R.string.achievement_challenger));
                 break;
-            default:
-                setTearData(ContextCompat.getDrawable(this,R.drawable.tracer),"시간역행", "죄송합니다 오류가 발생했습니다! 다시 한번 측정해주세요");
-                kakaoStr = "죄송합니다 오류가 발생했습니다!";
-                kakaoImgSrc = "http://i.imgur.com/KIMTsYp.png";
-                if(isGoogleConn)
-                    Games.Achievements.unlock(mGoogleApiClient,getString(R.string.achievement_tracer));
+//            default:
+//                setTearData(ContextCompat.getDrawable(this,R.drawable.tracer),"시간역행", "죄송합니다 오류가 발생했습니다! 다시 한번 측정해주세요");
+//                kakaoStr = "죄송합니다 오류가 발생했습니다!";
+//                kakaoImgSrc = "http://i.imgur.com/KIMTsYp.png";
+//                if(isGoogleConn)
+//                    Games.Achievements.unlock(mGoogleApiClient,getString(R.string.achievement_tracer));
         }
-
-        //측정 카운트
-        int count = pref.getInt("count");
-        Log.e(TAG,"count : "+count);
-        if(isGoogleConn){
-            if(count == 15){
-                Games.Achievements.increment(mGoogleApiClient,getString(R.string.achievement_challenger),4);
-            }else if(count == 14){
-                Games.Achievements.increment(mGoogleApiClient,getString(R.string.achievement_challenger),3);
-            }else if(count == 7){
-                Games.Achievements.increment(mGoogleApiClient,getString(R.string.achievement_challenger),2);
-            }else if(count == 1){
-                Games.Achievements.increment(mGoogleApiClient,getString(R.string.achievement_challenger),1);
-            }
-        }
-        pref.putInt("count",count+1);
+//
+//        //측정 카운트
+//        int count = pref.getInt("count");
+//        Log.e(TAG,"count : "+count);
+//        if(isGoogleConn){
+//            if(count == 15){
+//                Games.Achievements.increment(mGoogleApiClient,getString(R.string.achievement_challenger),4);
+//            }else if(count == 14){
+//                Games.Achievements.increment(mGoogleApiClient,getString(R.string.achievement_challenger),3);
+//            }else if(count == 7){
+//                Games.Achievements.increment(mGoogleApiClient,getString(R.string.achievement_challenger),2);
+//            }else if(count == 1){
+//                Games.Achievements.increment(mGoogleApiClient,getString(R.string.achievement_challenger),1);
+//            }
+//        }
+//        pref.putInt("count",count+1);
 
     }
 
@@ -257,7 +250,7 @@ public class TearActivity extends BaseGameActivity {
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
-                                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.hyeongpil.overscouter"));
+                                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.hyeongpil.lolscouter"));
                                 startActivity(intent);
                             }
                         })
