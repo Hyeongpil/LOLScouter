@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_top_margin"
+        android:layout_marginLeft="@dimen/title_left_margin"
+        android:text="문제 4. 자리야 플레이 도중 보호막 쿨타임이 돌아왔다. 다음중 누구에게 방벽을 줘야할까?"
+        android:textSize="@dimen/question_text_size"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="@dimen/question_list_top_margin"
+        android:layout_marginLeft="@dimen/question_list_side_margin"
+        android:layout_marginRight="@dimen/question_list_side_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. 무작정 나가지 말라고 해도 앞에서 신나게 두들겨 맞고있는 윈스턴"
+            android:textSize="@dimen/question_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. 로드호그한테 끌려간 디바"
+            android:layout_marginTop="@dimen/question_top_margin"
+            android:textSize="@dimen/question_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. 겐지한테 고통받고있는 아나"
+            android:layout_marginTop="@dimen/question_top_margin"
+            android:textSize="@dimen/question_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. 뒤에서 보호막달라고 조르는 여자(남자)친구"
+            android:layout_marginTop="@dimen/question_top_margin"
+            android:textSize="@dimen/question_text_size"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@drawable/ic_keyboard_arrow_left_white_36dp"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="@dimen/count_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/temp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_count"
+        android:textSize="@dimen/count_text_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"/>
+</RelativeLayout>

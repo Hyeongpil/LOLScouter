@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "91311773031",
+    "firebase_url": "https://api-project-95196323.firebaseio.com",
+    "project_id": "api-project-95196323",
+    "storage_bucket": "api-project-95196323.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91311773031:android:ad50a0cae26dab37",
+        "android_client_info": {
+          "package_name": "com.hyeongpil.lolscouter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91311773031-o160f4k8u1hg2ghr9l116g35sg7vcna9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hyeongpil.lolscouter",
+            "certificate_hash": "bb2d10a898cacafdba4c88832bfcd6e46677539d"
+          }
+        },
+        {
+          "client_id": "91311773031-im9pikqsavpg5agovcrdpfqhufgiv1l1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZre2VP64vsTpC5h-TBjbob45W1n-ijG8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91311773031-im9pikqsavpg5agovcrdpfqhufgiv1l1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

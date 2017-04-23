@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_top_margin"
+        android:layout_marginLeft="@dimen/title_left_margin"
+        android:text="문제 8. 각 맵의 특징을 이해하고 고지대와 시야의 중요성을 알고 활용하고 있나요?"
+        android:textSize="@dimen/question_text_size"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="@dimen/question_list_top_margin"
+        android:layout_marginLeft="@dimen/question_list_side_margin"
+        android:layout_marginRight="@dimen/question_list_side_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. 게임은 즐기라고 하는거다. 게임마저 공부를 해야하는가..."
+            android:textSize="@dimen/question_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. 그냥 팀원이 많이 뭉쳐있는곳 사이에 나도 같이 껴있는다. 매우 자연스럽다."
+            android:layout_marginTop="@dimen/question_top_margin"
+            android:textSize="@dimen/question_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. 난 맵의 특징과 캐릭터별 꿀 위치를 알고 활용한다. 못하는 애들이 눈에 보이기 시작했다."
+            android:layout_marginTop="@dimen/question_top_margin"
+            android:textSize="@dimen/question_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. 프로게이머들의 강의 영상을 보며 모든 맵을 공부했다. 게임공부는 자다가도 눈이 떠진다."
+            android:layout_marginTop="@dimen/question_top_margin"
+            android:textSize="@dimen/question_text_size"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@drawable/ic_keyboard_arrow_left_white_36dp"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:textSize="@dimen/count_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/temp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_count"
+        android:textSize="@dimen/count_text_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"/>
+
+</RelativeLayout>

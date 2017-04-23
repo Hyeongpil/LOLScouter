@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이 앱은 오버워치 실력을 '정확'하게 측정하기위해 제작되었습니다.\n\n경쟁전에서 팀원의 트롤때문에 정확하게 측정하지 못한 당신의 진짜 티어를 측정해줍니다.\n\n재미있게 해주세요!\n\n(문제의 배점은 제작자의 주관이 포함되어있습니다.) "
+            android:textSize="@dimen/question_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_stage0_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="진짜 실력 측정하기  >>"
+            android:textSize="@dimen/question_text_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_stage0_sombra"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+
+</RelativeLayout>
