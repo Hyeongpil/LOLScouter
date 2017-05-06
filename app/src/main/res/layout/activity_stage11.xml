@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/title_top_margin"
         android:layout_marginLeft="@dimen/title_left_margin"
-        android:text="문제 11. 음성채팅으로 팀원들과 소통하고있나요?"
+        android:text="문제 11. 소환사의 협곡 맵을 이해하고 있나요?"
         android:textSize="@dimen/question_text_size"/>
 
     <LinearLayout
@@ -26,14 +26,14 @@
             android:id="@+id/tv_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. 부끄러워서 말을 못하겠어요,\n마이크가 없어요."
+            android:text="1. ... 게임도 공부해야 하나요? 저는 그냥 해요"
             android:textSize="@dimen/question_text_size"/>
 
         <TextView
             android:id="@+id/tv_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2. 전 여자랑만 대화해요 남자에겐 말도 섞기 싫어요."
+            android:text="2. 기본적인 정글 몬스터의 이해와 주요 와드 포인트를 숙지하고있어요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -41,7 +41,7 @@
             android:id="@+id/tv_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3. 이기고 있으면 브리핑 신나게 하는데 지고있으면 말이 없어져요."
+            android:text="3. 저는 챔피언 스킬별 넘을 수 있는 벽을 티모미터 단위로 계산하여 알고있어요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -49,7 +49,7 @@
             android:id="@+id/tv_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4. 적의 위치와 궁극기상태, 진입 타이밍등 다양한 정보를 쉬지않고 말해요."
+            android:text="4. 저는 벽의 길이와 모든 부쉬의 활용, 포탑의 공격력, 억제기의 재생성 시간 등 모든것을 공부했어요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -57,7 +57,7 @@
             android:id="@+id/tv_five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5. 저는 여자라서 음성채팅이 두려워요. 음성 변조 없이는 못하겠어요."
+            android:text="5. 저는 바깥보다 소환사의 협곡을 더 많이 돌아다녔어요. 모든것을 이해하고 알고있어요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -69,6 +69,14 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/activity_vertical_margin"
         android:background="@drawable/ic_keyboard_arrow_left_white_36dp"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/iv_teemo11"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/teemo"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"/>
 
     <TextView

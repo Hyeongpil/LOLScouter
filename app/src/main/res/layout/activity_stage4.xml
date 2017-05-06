@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/title_top_margin"
         android:layout_marginLeft="@dimen/title_left_margin"
-        android:text="문제 4. 자리야 플레이 도중 보호막 쿨타임이 돌아왔다. 다음중 누구에게 방벽을 줘야할까?"
+        android:text="문제 4. 미니언에 대한 이해와 미니언 관리의 중요성을 알고있나요?"
         android:textSize="@dimen/question_text_size"/>
 
     <LinearLayout
@@ -26,14 +26,14 @@
             android:id="@+id/tv_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. 무작정 나가지 말라고 해도 앞에서 신나게 두들겨 맞고있는 윈스턴"
+            android:text="1. 저는 CS 먹기도 힘들어요..."
             android:textSize="@dimen/question_text_size"/>
 
         <TextView
             android:id="@+id/tv_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2. 로드호그한테 끌려간 디바"
+            android:text="2. 저는 미니언 어그로를 이해하고 있어 딜교에서 수월하게 우위를 점해요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -41,7 +41,7 @@
             android:id="@+id/tv_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3. 겐지한테 고통받고있는 아나"
+            android:text="3. 미니언 빅웨이브를 만들 줄 알고 이를 통한 라인 운영으로 상대방 챔피언을 빠지게 한 후 한타를 열거나 잘라먹어요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -49,7 +49,15 @@
             android:id="@+id/tv_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4. 뒤에서 보호막달라고 조르는 여자(남자)친구"
+            android:text="4. 저는 상대방 챔피언을 처치한 뒤 미니언에게 죽은적이 많아요."
+            android:layout_marginTop="@dimen/question_top_margin"
+            android:textSize="@dimen/question_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. 저는 미니언 어그로 이해, 빅웨이브 관리, 라인 프리징 등 모든것을 이해하고 활용할 줄 알아요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 

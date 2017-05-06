@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/title_top_margin"
         android:layout_marginLeft="@dimen/title_left_margin"
-        android:text="문제 2. 경쟁전에서 솜브라 칼픽을 만났다. 플레이 시간을 확인해보니 10분이었다. 당신의 대처는?"
+        android:text="문제 2. 랭크게임에서 티모 칼픽을 만났다. 전적을 확인해보니 전패였다. 당신의 대처는?"
         android:textSize="@dimen/question_text_size"/>
 
     <LinearLayout
@@ -26,14 +26,14 @@
             android:id="@+id/tv_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. 솜브라의 신들린 컨트롤을 믿으며 조용히 플레이한다."
+            android:text="1. 티모의 신들린 백도어를 믿으며 조용히 플레이한다."
             android:textSize="@dimen/question_text_size"/>
 
         <TextView
             android:id="@+id/tv_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2. 솜브라의 멘탈을 키보드로 찢으며 다른 픽으로 유도한다."
+            android:text="2. 티모의 멘탈을 키보드로 찢으며 다른 픽으로 유도한다."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -49,9 +49,25 @@
             android:id="@+id/tv_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4. 나도 겐지를 칼픽한다."
+            android:text="4. 나도 안해본 하이머딩거를 칼픽하여 누군가 닷지를 해주길 기다리고있다."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. 총대를 메고 닷지를 한다."
+            android:layout_marginTop="@dimen/question_top_margin"
+            android:textSize="@dimen/question_text_size"/>
+
+        <ImageView
+            android:id="@+id/iv_teemo2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/teemo"
+            android:layout_gravity="right" />
+
     </LinearLayout>
 
     <ImageView

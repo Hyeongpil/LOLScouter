@@ -28,25 +28,31 @@ public class Stage_4_Activity extends BaseActivity {
 
     @OnClick(R.id.tv_one)
     void oneClick(){
-        addScore(20);
+        addScore(5);
         nextStage();
     }
 
     @OnClick(R.id.tv_two)
     void twoClick(){
-        addScore(10);
+        addScore(15);
         nextStage();
     }
 
     @OnClick(R.id.tv_three)
     void threeClick(){
-        addScore(30);
+        addScore(25);
         nextStage();
     }
 
     @OnClick(R.id.tv_four)
     void fourClick(){
-        addScore(0);
+        addScore(5);
+        nextStage();
+    }
+
+    @OnClick(R.id.tv_five)
+    void fiveClick(){
+        addScore(30);
         nextStage();
     }
 

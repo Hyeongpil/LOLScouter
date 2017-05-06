@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/title_top_margin"
         android:layout_marginLeft="@dimen/title_left_margin"
-        android:text="문제 6. 당신은 솔져로 팀의 메인 딜러를 맡게되었다. 가장 중요하다고 생각하는것은?"
+        android:text="문제 6. 당신은 소환사의 협곡 정글러입니다. 어떻게 챔피언을 사냥하시나요?"
         android:textSize="@dimen/question_text_size"/>
 
     <LinearLayout
@@ -26,14 +26,14 @@
             android:id="@+id/tv_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. 서든했던 실력, 로켓점프 활용을 과시하며 혼자 달린다."
+            android:text="1. 서포터에게 대신 맞아달라고 징징거리며 버프를 먹은 뒤 적 라이너에게 버프를 상납해요."
             android:textSize="@dimen/question_text_size"/>
 
         <TextView
             android:id="@+id/tv_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2. 죽지 않는것이 가장 중요하다. 라인하르트 뒤에 딱붙어 딜의 노예가 된다."
+            android:text="2. 저는 초식동물이에요. 조신하게 우리 정글만 먹고 아군이 죽은 라인의 미니언을 줏어먹어요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -41,7 +41,7 @@
             android:id="@+id/tv_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3. 고지대를 선점하여 넓은 시야를 가지고 딜을 한다."
+            android:text="3. 저는 와드를 활용하여 적 정글러의 동선을 파악할 줄 알고 아군에게 경고를 해주며 역갱각을 볼 줄 알아요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -49,7 +49,7 @@
             android:id="@+id/tv_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4. 누구보다 빠르게 뒤로 달려가 적의 지원가를 노린다."
+            android:text="4. 측면갱, 직선갱, 다이브갱, 땅굴갱 등 모든 방법을 활용할 줄 알고 모든 라이너를 케어해 줄 수 있는 정글러 그 자체에요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -66,7 +66,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="5"
+        android:text="6"
         android:textSize="@dimen/count_text_size"
         android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@+id/temp"

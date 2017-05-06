@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/title_top_margin"
         android:layout_marginLeft="@dimen/title_left_margin"
-        android:text="문제 7. 솔직하게 모든 맵의 생명력 팩 위치를 알고있나요?"
+        android:text="문제 7. 당신은 왕이 될 준비를 하는 탑 라이너입니다. 평소 어떻게 행동하시나요?"
         android:textSize="@dimen/question_text_size"/>
 
     <LinearLayout
@@ -26,14 +26,14 @@
             android:id="@+id/tv_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. 난 생명력팩따윈 먹지않는다. 우리 힐러를 믿고있다."
+            android:text="1. 저는 농부에요. 탑에서 왕이 될 때 까지 조신하게 미니언 농사를 지어요."
             android:textSize="@dimen/question_text_size"/>
 
         <TextView
             android:id="@+id/tv_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2. 자주 먹는곳의 위치를 알고 찾아갈 수 있다."
+            android:text="2. 저는 육식이어서 적 탑라이너를 잡아내지만 정글러에게 갱킹을 자주 당해요. 우리팀 정글은 뭐하는지 모르겠어요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -41,7 +41,7 @@
             android:id="@+id/tv_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3. 거의 모든 생명력팩의 위치를 알고있다."
+            android:text="3. 저는 미니언을 활용하여 라인의 우위를 점할 줄 알고 디나이를 통해 상대방 탑의 멘탈을 찢어요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -49,7 +49,7 @@
             android:id="@+id/tv_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4. 지도를 보며 모든 생명력팩의 위치를 암기했다. 전공 공부보다 더 열심히한다."
+            android:text="4. 저는 상대방 정글 조련사에요. 라인의 우위를 점하고 와딩을 통해 상대편 정글을 불러낸 뒤 도망가요. 적 정글러를 최대한 우리 시야 안에 두고있어요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 

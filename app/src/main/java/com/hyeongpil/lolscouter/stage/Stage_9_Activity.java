@@ -28,7 +28,7 @@ public class Stage_9_Activity extends BaseActivity {
 
     @OnClick(R.id.tv_one)
     void oneClick(){
-        addScore(0);
+        addScore(20);
         nextStage();
     }
 
@@ -40,19 +40,19 @@ public class Stage_9_Activity extends BaseActivity {
 
     @OnClick(R.id.tv_three)
     void threeClick(){
-        addScore(20);
+        addScore(15);
         nextStage();
     }
 
     @OnClick(R.id.tv_four)
     void fourClick(){
-        addScore(30);
+        addScore(20);
         nextStage();
     }
 
     @OnClick(R.id.tv_five)
     void fiveClick(){
-        addScore(30);
+        addScore(25);
         nextStage();
     }
 

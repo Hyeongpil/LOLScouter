@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/title_top_margin"
         android:layout_marginLeft="@dimen/title_left_margin"
-        android:text="문제 1. 오버워치에서 가장 중요하다고 생각하는것은?"
+        android:text="문제 1. 챔피언 선택 중 당신의 평소 행동은?"
         android:textSize="@dimen/question_text_size"/>
 
     <LinearLayout
@@ -26,14 +26,14 @@
             android:id="@+id/tv_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. 내 피지컬이 가장 중요하다. 멱살잡고 캐리해준다."
+            android:text="1. 가장 자신있는 챔피언을 무조건 칼픽하며 팀원들에게 버스를 태워준다고 한다."
             android:textSize="@dimen/question_text_size"/>
 
         <TextView
             android:id="@+id/tv_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2. 팀원과의 협동이 중요하다. 조합과 진입 타이밍을 맞춘다."
+            android:text="2. 대회에서 나오거나 신 챔피언 등 하고 싶은걸 픽하고 내 카운터 픽을 벤한다."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -41,7 +41,7 @@
             android:id="@+id/tv_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3. 정치질이 가장 중요하다. 게임 끝나고 저 4금인데요 하면 인정해준다."
+            android:text="3. 인벤에 서식하며 철저히 분석하여 1티어 챔피언만 선택, 벤하고 팀원이 비주류 챔피언을 고르면 불안하다."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -49,7 +49,15 @@
             android:id="@+id/tv_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4. 겐지가 함께해야한다."
+            android:text="4. 일단 티모를 칼픽하고 아무말도 하지않는다."
+            android:layout_marginTop="@dimen/question_top_margin"
+            android:textSize="@dimen/question_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. 상대편의 조합을 보며 카운터픽을 하고 최신 메타를 공부하여 아군 조합을 맞춘다."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
     </LinearLayout>

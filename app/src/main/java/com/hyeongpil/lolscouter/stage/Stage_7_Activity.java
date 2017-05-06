@@ -28,7 +28,7 @@ public class Stage_7_Activity extends BaseActivity {
 
     @OnClick(R.id.tv_one)
     void oneClick(){
-        addScore(0);
+        addScore(5);
         nextStage();
     }
 

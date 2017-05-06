@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/title_top_margin"
         android:layout_marginLeft="@dimen/title_left_margin"
-        android:text="문제 9. 평소 에임은 어떤가요? 평소에 에임 연습을 하고있나요?"
+        android:text="문제 9. 당신은 팀을 케어해주는 서포터입니다. 평소 행동은 어떤가요?"
         android:textSize="@dimen/question_text_size"/>
 
     <LinearLayout
@@ -26,14 +26,14 @@
             android:id="@+id/tv_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. 에임이 뭔가요? 연습 해야하나요?"
+            android:text="1. 저는 우리팀 원딜에게 킬을 떠먹여주는 엄마에요."
             android:textSize="@dimen/question_text_size"/>
 
         <TextView
             android:id="@+id/tv_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2. 전 훈련장에서 끌어치기, 트래킹 다 배웠어요 맥크리만 할거에요"
+            android:text="2. 저는 봇과 미드의 서포터에요. 자주 가출해서 미드를 노리고있어요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -41,7 +41,7 @@
             android:id="@+id/tv_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3. 하루 5분이상 에임연습 덕분에 벽타는 루시우도 다 맞추는 에임 실력을 가지고있어요."
+            android:text="3. 저는 공격 아이템으로 무장하여 팀을 캐리해요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -49,7 +49,7 @@
             android:id="@+id/tv_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4. 전용 마우스, 144 모니터 없으면 오버워치 안합니다. 기본기인 자세와 마우스그립을 마스터하였고 최적의 감도를 찾기위해 마우스와 하나가 되었습니다."
+            android:text="4. 적 챔피언별 라인 운영법을 알고 도란 또는 시야 아이템을 선택하여 라인을 운영해요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -57,7 +57,7 @@
             android:id="@+id/tv_five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5. 제 에임 실력은 별로인거같아요. 그래서 지원가를 주로 해요."
+            android:text="5. 완벽한 시야 운영으로 원딜의 마음을 편하게 해주고 적 정글러의 위치를 파악해요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
     </LinearLayout>

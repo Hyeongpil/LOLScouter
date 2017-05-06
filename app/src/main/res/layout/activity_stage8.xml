@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/title_top_margin"
         android:layout_marginLeft="@dimen/title_left_margin"
-        android:text="문제 8. 각 맵의 특징을 이해하고 고지대와 시야의 중요성을 알고 활용하고 있나요?"
+        android:text="문제 8. 당신은 팀의 딜을 책임지는 원거리 딜러입니다. 평소 행동은 어떤가요?"
         android:textSize="@dimen/question_text_size"/>
 
     <LinearLayout
@@ -26,14 +26,14 @@
             android:id="@+id/tv_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. 게임은 즐기라고 하는거다. 게임마저 공부를 해야하는가..."
+            android:text="1. 저는 잘하는데 서포터가 못해서 질때가 많아요."
             android:textSize="@dimen/question_text_size"/>
 
         <TextView
             android:id="@+id/tv_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2. 그냥 팀원이 많이 뭉쳐있는곳 사이에 나도 같이 껴있는다. 매우 자연스럽다."
+            android:text="2. 저는 죽지않는것이 가장 중요하다고 생각해요. 조신하게 CS만 챙기고 후반을 도모해요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -41,7 +41,7 @@
             android:id="@+id/tv_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3. 난 맵의 특징과 캐릭터별 꿀 위치를 알고 활용한다. 못하는 애들이 눈에 보이기 시작했다."
+            android:text="3. 상대편 암살자의 점멸시간을 파악하고 있어 과감한 미니언 정리와 짤짤이를 넣을줄 알아요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -49,7 +49,7 @@
             android:id="@+id/tv_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4. 프로게이머들의 강의 영상을 보며 모든 맵을 공부했다. 게임공부는 자다가도 눈이 떠진다."
+            android:text="4. 프로게이머급 CS 수급력, 미니언 관리, 암살자를 낚는 연기력과 정확한 포지셔닝으로 안정적인 딜링을 해요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 

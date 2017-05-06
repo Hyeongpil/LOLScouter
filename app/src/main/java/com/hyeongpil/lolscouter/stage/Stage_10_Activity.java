@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.hyeongpil.lolscouter.BaseActivity;
 import com.hyeongpil.lolscouter.R;
+import com.hyeongpil.lolscouter.util.GlobalApplication;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -28,19 +30,19 @@ public class Stage_10_Activity extends BaseActivity {
 
     @OnClick(R.id.tv_one)
     void oneClick(){
-        addScore(0);
+        addScore(15);
         nextStage();
     }
 
     @OnClick(R.id.tv_two)
     void twoClick(){
-        addScore(20);
+        addScore(0);
         nextStage();
     }
 
     @OnClick(R.id.tv_three)
     void threeClick(){
-        addScore(10);
+        addScore(20);
         nextStage();
     }
 

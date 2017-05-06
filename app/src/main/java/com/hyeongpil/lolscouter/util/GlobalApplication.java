@@ -3,48 +3,19 @@ package com.hyeongpil.lolscouter.util;
 import android.app.Application;
 import android.util.Log;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.hyeongpil.lolscouter.R;
-
-import java.util.GregorianCalendar;
-
-
 /**
  * Created by Hyeongpil on 2017-01-13.
  */
 public class GlobalApplication extends Application {
     final static String TAG = GlobalApplication.class.getSimpleName();
     private static volatile GlobalApplication instance = null;
-    private InterstitialAd mInterstitialAd;
-    public GoogleApiClient mGoogleApiClient = null;
     private long startTime = 0;
+    private int teemoCnt = 0;
 
     @Override
     public void onCreate() {
         super.onCreate();
         instance = this;
-        setAd();
-    }
-
-    private void setAd() {
-        MobileAds.initialize(this, this.getResources().getString(R.string.add_mop_id));
-        mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId(this.getResources().getString(R.string.reword_ad_unit_id));
-        loadAd();
-    }
-
-
-    public void loadAd(){
-        if (!mInterstitialAd.isLoading() && !mInterstitialAd.isLoaded()) {
-            AdRequest adRequest = new AdRequest.Builder()
-                    .setBirthday(new GregorianCalendar(1997, 1, 1).getTime())
-                    .setGender(AdRequest.GENDER_MALE)
-                    .build();
-            mInterstitialAd.loadAd(adRequest);
-        }
     }
 
     /**
@@ -65,20 +36,6 @@ public class GlobalApplication extends Application {
         super.onTerminate();
         Log.e(TAG,"onTerminate 진입");
         instance = null;
-        if(mGoogleApiClient != null)
-            mGoogleApiClient.disconnect();
-    }
-
-    public GoogleApiClient getmGoogleApiClient() {
-        return mGoogleApiClient;
-    }
-
-    public InterstitialAd getmInterstitialAd() {
-        return mInterstitialAd;
-    }
-
-    public void setmGoogleApiClient(GoogleApiClient mGoogleApiClient) {
-        this.mGoogleApiClient = mGoogleApiClient;
     }
 
     public void setStartTime(long startTime) {
@@ -88,5 +45,13 @@ public class GlobalApplication extends Application {
 
     public long getStartTime() {
         return startTime;
+    }
+
+    public int getTeemoCnt() {
+        return teemoCnt;
+    }
+
+    public void setTeemoCnt(int teemoCnt) {
+        this.teemoCnt = teemoCnt;
     }
 }

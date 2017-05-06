@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/title_top_margin"
         android:layout_marginLeft="@dimen/title_left_margin"
-        android:text="문제 5. 배치고사에서 디바를 선택했다. 가장 중요한 역할은?"
+        android:text="문제 5. 당신은 협곡의 중심 미드라인에 섰습니다! 평소 어떻게 행동하시나요?"
         android:textSize="@dimen/question_text_size"/>
 
     <LinearLayout
@@ -26,14 +26,14 @@
             android:id="@+id/tv_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. 아까부터 짜증나게하던 트레이서를 죽이러간다."
+            android:text="1. 대회에서 페이커가 하는 플레이를 보고 페이커 빙의해서 따라해요."
             android:textSize="@dimen/question_text_size"/>
 
         <TextView
             android:id="@+id/tv_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2. 적 진영 2층에서 쪼고있는 솔져를 마크한다."
+            android:text="2. 저는 더티파밍을 좋아해서 정글까지 다 빼먹는 돼지에요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -41,7 +41,7 @@
             android:id="@+id/tv_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3. 적 기지 입구에서 뺑소니를 준비한다."
+            android:text="3. 저는 정글과 한몸이에요. 빠른 백업과 판단력으로 정글과 함께 소환사의 협곡을 흔들어요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -49,7 +49,15 @@
             android:id="@+id/tv_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4. 우리팀 뒤에 서서 매트릭스를 열심히 키고있는다."
+            android:text="4. 저는 다른건 모르고 오직 같은 라인에 선 상대편 미드라이너를 죽이고싶은 마음 뿐이에요."
+            android:layout_marginTop="@dimen/question_top_margin"
+            android:textSize="@dimen/question_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. 완벽한 맵 리딩과 정확한 딜계산, 귀신같은 합류, 빠른 백업 등 모든것을 하는 미드라인의 정점이에요."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 

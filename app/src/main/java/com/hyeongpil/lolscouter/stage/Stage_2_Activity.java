@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.hyeongpil.lolscouter.BaseActivity;
 import com.hyeongpil.lolscouter.R;
+import com.hyeongpil.lolscouter.util.GlobalApplication;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -48,6 +50,19 @@ public class Stage_2_Activity extends BaseActivity {
     void fourClick(){
         addScore(10);
         nextStage();
+    }
+
+    @OnClick(R.id.tv_five)
+    void fiveClick(){
+        addScore(15);
+        nextStage();
+    }
+
+    @OnClick(R.id.iv_teemo2)
+    void teemoClick(){
+        ImageView iv_teemo = (ImageView)findViewById(R.id.iv_teemo2);
+        iv_teemo.setVisibility(View.INVISIBLE);
+        GlobalApplication.getInstance().setTeemoCnt(GlobalApplication.getInstance().getTeemoCnt()+1);
     }
 
     @OnClick(R.id.iv_back)

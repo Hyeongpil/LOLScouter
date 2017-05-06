@@ -33,12 +33,4 @@ public class Stage_0_Activity extends AppCompatActivity {
         finish();
         overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_out_left);
     }
-
-    @OnClick(R.id.ll_stage0_sombra)
-    void sombraClick(){
-        Intent intent = new Intent(this,TearActivity.class);
-        intent.putExtra("tear","sombra");
-        startActivity(intent);
-        finish();
-    }
 }

@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/title_top_margin"
         android:layout_marginLeft="@dimen/title_left_margin"
-        android:text="문제 3. 경쟁전에서 우리팀이 핵 유저인걸 알았다. 당신의 대처는?"
+        android:text="문제 3. 게임이 시작되었습니다! 당신의 평소 행동은 어떤가요?"
         android:textSize="@dimen/question_text_size"/>
 
     <LinearLayout
@@ -26,14 +26,14 @@
             android:id="@+id/tv_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. 적팀에게 무승부를 제안하고 뒷통수를 친다."
+            android:text="1. 로딩만 되면 화장실가고 담배피러가고 웹툰을 본다."
             android:textSize="@dimen/question_text_size"/>
 
         <TextView
             android:id="@+id/tv_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2. 조용히 버스의 승차감을 느낀다."
+            android:text="2. 상대편과 우리팀의 전적을 모두 검색한 다음 정치를 준비한다."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -41,7 +41,7 @@
             android:id="@+id/tv_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3. 핵은 오버워치를 망치는 공해이다. 무승부 게임을 만든다."
+            android:text="3. 아이템을 빠르게 구매한 다음 상대방의 모든 인베 루트를 감시한다."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
 
@@ -49,17 +49,9 @@
             android:id="@+id/tv_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4. 상대방에게 우리 버스를 자랑하며 조롱한다."
+            android:text="4. 시작부터 전체채팅으로 상대방을 조롱하며 심리공격을 한다."
             android:layout_marginTop="@dimen/question_top_margin"
             android:textSize="@dimen/question_text_size"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="출제자 : 제티#31593"
-            android:layout_marginTop="@dimen/examiner_top_margin"
-            android:textSize="@dimen/question_text_size"/>
-
     </LinearLayout>
 
     <ImageView
