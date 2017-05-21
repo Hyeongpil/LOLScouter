@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="finish">종료</string>
+    <string name="review_cancel">귀찮아요</string>
+
+    <string name="cancle">취소</string>
+
+
+</resources>

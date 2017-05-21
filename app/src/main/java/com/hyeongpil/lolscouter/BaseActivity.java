@@ -9,6 +9,9 @@ import android.widget.Toast;
 
 import com.hyeongpil.lolscouter.model.Score;
 
+import gun0912.tedadhelper.backpress.OnBackPressListener;
+import gun0912.tedadhelper.backpress.TedBackPressDialog;
+
 
 public class BaseActivity extends AppCompatActivity {
     private final String TAG = BaseActivity.class.getSimpleName();
@@ -50,17 +53,26 @@ public class BaseActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        long tempTime        = System.currentTimeMillis();
-        long intervalTime    = tempTime - backPressedTime;
+        TedBackPressDialog.startFacebookDialog(this, getString(R.string.app_name), getString(R.string.facebook_nativeid), new OnBackPressListener() {
+            @Override
+            public void onReviewClick() {}
 
-        if ( 0 <= intervalTime && FINSH_INTERVAL_TIME >= intervalTime ) {
-            moveTaskToBack(true);
-            finish();
-            android.os.Process.killProcess(android.os.Process.myPid());
-        }else {
-            backPressedTime = tempTime;
-            Toast.makeText(getApplicationContext(),"'뒤로'버튼을 한번더 누르면 종료됩니다.", Toast.LENGTH_SHORT).show();
-        }
+            @Override
+            public void onFinish() {
+                finish();
+            }
+
+            @Override
+            public void onError(String errorMessage) {
+                finish();
+            }
+
+            @Override
+            public void onLoaded(int adType) {}
+
+            @Override
+            public void onAdClicked(int adType) {
+            }
+        });
     }
 }

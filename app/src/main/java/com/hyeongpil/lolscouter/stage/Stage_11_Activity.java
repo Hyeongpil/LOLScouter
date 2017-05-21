@@ -6,8 +6,8 @@ import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
-import com.google.android.gms.ads.InterstitialAd;
 import com.google.firebase.crash.FirebaseCrash;
 import com.hyeongpil.lolscouter.BaseActivity;
 import com.hyeongpil.lolscouter.R;
@@ -28,6 +28,7 @@ public class Stage_11_Activity extends BaseActivity {
     final static String TAG = Stage_11_Activity.class.getSimpleName();
     private String tear;
     private double clearTime = 0;
+    private boolean isClicked = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class Stage_11_Activity extends BaseActivity {
         container.setLayoutResource(R.layout.activity_stage11);
         View containView = container.inflate();
         ButterKnife.bind(this);
+        isClicked = false;
     }
 
     @OnClick(R.id.tv_one)
@@ -122,24 +124,29 @@ public class Stage_11_Activity extends BaseActivity {
     }
 
     private void showInterstitial() {
-        TedAdFront.showFrontAD(this, getString(R.string.facebook_id), getString(R.string.reword_ad_unit_id), TedAdHelper.AD_FACEBOOK, new OnFrontAdListener() {
-            @Override
-            public void onDismissed(int adType) {
-                tearIntent();
-            }
-            @Override
-            public void onError(String errorMessage) {
-                Log.e(TAG,"ad error : "+errorMessage);
-                FirebaseCrash.report(new Exception(errorMessage));
-                tearIntent();
-            }
-            @Override
-            public void onLoaded(int adType) {}
-            @Override
-            public void onAdClicked(int adType) {}
-            @Override
-            public void onFacebookAdCreated(com.facebook.ads.InterstitialAd facebookFrontAD) {}
-        });
+        if(!isClicked){
+            TedAdFront.showFrontAD(this, getString(R.string.facebook_id), getString(R.string.reword_ad_unit_id), TedAdHelper.AD_FACEBOOK, new OnFrontAdListener() {
+                @Override
+                public void onDismissed(int adType) {
+                    tearIntent();
+                }
+                @Override
+                public void onError(String errorMessage) {
+                    Log.e(TAG,"ad error : "+errorMessage);
+                    FirebaseCrash.report(new Exception(errorMessage));
+                    tearIntent();
+                }
+                @Override
+                public void onLoaded(int adType) {}
+                @Override
+                public void onAdClicked(int adType) {}
+                @Override
+                public void onFacebookAdCreated(com.facebook.ads.InterstitialAd facebookFrontAD) {}
+            });
+        }else{
+            Toast.makeText(this, "측정중입니다. 잠시만 기다려주세요.", Toast.LENGTH_SHORT).show();
+        }
+        isClicked = true;
     }
 
 

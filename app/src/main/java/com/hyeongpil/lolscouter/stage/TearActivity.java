@@ -87,15 +87,15 @@ public class TearActivity extends BaseGameActivity {
                     Games.Achievements.unlock(mGoogleApiClient,"CgkI56rslNQCEAIQAQ");
                 break;
             case "silver":
-                setTearData(ContextCompat.getDrawable(this,R.drawable.silver), "실버", "내 실력은 플레인데 왜 실버인지 모르겠다구요? 문제를 풀어보며 되돌아보세요!");
+                setTearData(ContextCompat.getDrawable(this,R.drawable.silver), "실버", "내 실력은 골드인데 왜 실버인지 모르겠다구요? 문제를 풀어보며 되돌아보세요!");
                 kakaoStr = "제 실력측정 결과는 실버입니다. 정말 정확한 실력측정기입니다!";
                 kakaoImgSrc = "http://i.imgur.com/dxg2lZr.png";
                 if(isGoogleConn)
                     Games.Achievements.unlock(mGoogleApiClient,"CgkI56rslNQCEAIQAg");
                 break;
             case "gold":
-                setTearData(ContextCompat.getDrawable(this,R.drawable.gold), "골드", "난 분명 항상 금메달인데 팀운이 없었다구요? 다시 한번 측정해보세요!");
-                kakaoStr = "제 실력측정 결과는 골드입니다. 항상 금메달을 따고있는데 골드라구요? 한번 측정해보세요!";
+                setTearData(ContextCompat.getDrawable(this,R.drawable.gold), "골드", "난 분명 플레급인데 팀운이 없었다구요? 다시 한번 측정해보세요!");
+                kakaoStr = "제 실력측정 결과는 골드입니다. 브론즈 실버와는 클래스가 다르죠.";
                 kakaoImgSrc = "http://i.imgur.com/46bG2uT.png";
                 if(isGoogleConn)
                     Games.Achievements.unlock(mGoogleApiClient,"CgkI56rslNQCEAIQAw");
@@ -122,9 +122,9 @@ public class TearActivity extends BaseGameActivity {
                     Games.Achievements.unlock(mGoogleApiClient,"CgkI56rslNQCEAIQCQ");
                 break;
             case "ekko":
-                setTearData(ContextCompat.getDrawable(this,R.drawable.ekko), "시공간 붕괴", "설마 다 찍으셨나요?! 돌아가서 다시 풀어보세요!");
+                setTearData(ContextCompat.getDrawable(this,R.drawable.ekko2), "시공간 붕괴", "설마 다 찍으셨나요?! 돌아가서 다시 풀어보세요!");
                 kakaoStr = "실수를 하셨군요! 되돌아가서 다시 풀어보세요.";
-                kakaoImgSrc = "http://i.imgur.com/u4SyAhp.png";
+                kakaoImgSrc = "http://i.imgur.com/FbtQP1U.png";
                 if(isGoogleConn)
                     Games.Achievements.unlock(mGoogleApiClient,"CgkI56rslNQCEAIQBw");
                 break;
@@ -143,9 +143,9 @@ public class TearActivity extends BaseGameActivity {
                     Games.Achievements.unlock(mGoogleApiClient,"CgkI56rslNQCEAIQCA");
                 break;
             default:
-                setTearData(ContextCompat.getDrawable(this,R.drawable.ekko),"시공간 붕괴", "죄송합니다 오류가 발생했습니다! 다시 한번 측정해주세요");
+                setTearData(ContextCompat.getDrawable(this,R.drawable.ekko2),"시공간 붕괴", "죄송합니다 오류가 발생했습니다! 다시 한번 측정해주세요");
                 kakaoStr = "죄송합니다 오류가 발생했습니다.";
-                kakaoImgSrc = "http://i.imgur.com/u4SyAhp.png";
+                kakaoImgSrc = "http://i.imgur.com/FbtQP1U.png";
                 if(isGoogleConn)
                     Games.Achievements.unlock(mGoogleApiClient,"CgkI56rslNQCEAIQBw");
         }
@@ -220,8 +220,6 @@ public class TearActivity extends BaseGameActivity {
         TedBackPressDialog.startFacebookDialog(this, getString(R.string.app_name), getString(R.string.facebook_nativeid), new OnBackPressListener() {
             @Override
             public void onReviewClick() {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.hyeongpil.lolscouter"));
-                startActivity(intent);
             }
 
             @Override
@@ -236,12 +234,10 @@ public class TearActivity extends BaseGameActivity {
 
             @Override
             public void onLoaded(int adType) {
-
             }
 
             @Override
             public void onAdClicked(int adType) {
-
             }
         });
     }

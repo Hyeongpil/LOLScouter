@@ -4,11 +4,11 @@
     <string name="kakao_api_key">d5ea3eaae957c8b510b65de7bb5832f2</string>
     <string name="kakao_scheme">kakaod5ea3eaae957c8b510b65de7bb5832f2</string>
     <string name="kakaolink_host">kakaolink</string>
-    <string name="reword_ad_unit_id">ca-app-pub-6988156088152777/5675686844</string>
-    <string name="add_mop_id">ca-app-pub-6988156088152777~1245487245</string>
+    <string name="reword_ad_unit_id">ca-app-pub-6988156088152777/2943082843</string>
+    <string name="add_mop_id">ca-app-pub-6988156088152777~1466349649</string>
     <string name="app_id">91311773031</string>
     <string name="facebook_id">497370617263040_500609846939117</string>
-    <string name="facebook_nativeid">497370617263040_500630740270361</string>
+    <string name="facebook_nativeid">497370617263040_500609846939117</string>
 
     <string name="sign_in_failed">Failed to sign in. Please check your network connection and try again.</string>
     <string name="app_misconfigured">The application is incorrectly configured. Check that the package name and signing certificate match the client ID created in Developer Console. Also, if the application is not yet published, check that the account you are trying to sign in with is listed as a tester account. See logs for more information.</string>

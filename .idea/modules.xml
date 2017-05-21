@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/BaseGameUtils/BaseGameUtils.iml" filepath="$PROJECT_DIR$/BaseGameUtils/BaseGameUtils.iml" />
       <module fileurl="file://$PROJECT_DIR$/LoLScouter.iml" filepath="$PROJECT_DIR$/LoLScouter.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tedadhelper/tedadhelper.iml" filepath="$PROJECT_DIR$/tedadhelper/tedadhelper.iml" />
     </modules>
   </component>
 </project>
