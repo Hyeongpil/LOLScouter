@@ -93,7 +93,7 @@
             android:layout_above="@+id/ll_tear_kakao_container"
             android:layout_marginBottom="30dp"
             android:textSize="16dp"
-            android:text="falinrush@daum.net 으로 문제를 출제 해주세요!\n배틀태그도 같이 올려드립니다."/>
+            android:text="falinrush@daum.net 으로 문제를 출제 해주세요!\n소환사명도 같이 올려드립니다."/>
 
         <LinearLayout
             android:id="@+id/ll_tear_kakao_container"

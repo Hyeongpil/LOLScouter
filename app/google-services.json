@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "91311773031-05b6vlbclng2398umt5qc5kh62a8vhlt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hyeongpil.lolscouter",
+            "certificate_hash": "2993c44d2b1f47a441218fdf029d0e7522a48032"
+          }
+        },
+        {
           "client_id": "91311773031-o160f4k8u1hg2ghr9l116g35sg7vcna9.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
