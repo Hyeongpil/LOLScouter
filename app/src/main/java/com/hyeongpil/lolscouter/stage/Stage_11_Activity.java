@@ -125,7 +125,7 @@ public class Stage_11_Activity extends BaseActivity {
 
     private void showInterstitial() {
         if(!isClicked){
-            TedAdFront.showFrontAD(this, getString(R.string.facebook_id), getString(R.string.reword_ad_unit_id), TedAdHelper.AD_FACEBOOK, new OnFrontAdListener() {
+            TedAdFront.showFrontAD(this, getString(R.string.facebook_id), getString(R.string.reword_ad_unit_id), TedAdHelper.AD_ADMOB, new OnFrontAdListener() {
                 @Override
                 public void onDismissed(int adType) {
                     tearIntent();

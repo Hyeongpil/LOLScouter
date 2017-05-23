@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.ViewStub;
 import android.widget.Toast;
 
+import com.google.firebase.crash.FirebaseCrash;
 import com.hyeongpil.lolscouter.model.Score;
 
 import gun0912.tedadhelper.backpress.OnBackPressListener;
@@ -64,6 +65,8 @@ public class BaseActivity extends AppCompatActivity {
 
             @Override
             public void onError(String errorMessage) {
+                Log.e(TAG, "ad error : " + errorMessage);
+                FirebaseCrash.report(new Exception(errorMessage));
                 finish();
             }
 

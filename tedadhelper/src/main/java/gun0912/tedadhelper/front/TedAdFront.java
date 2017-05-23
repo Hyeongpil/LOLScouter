@@ -22,7 +22,6 @@ public class TedAdFront {
     private static String facebookKey;
     private static String admobKey;
     private static Context context;
-    private static com.google.android.gms.ads.InterstitialAd admobFrontAD = new com.google.android.gms.ads.InterstitialAd(context);
 
     public static void showFacebookFrontAd(Context context, String facebookKey, OnFrontAdListener onFrontAdListener) {
         showFrontAD(context, facebookKey, null, TedAdHelper.AD_FACEBOOK, onFrontAdListener);
@@ -135,6 +134,8 @@ public class TedAdFront {
 
 
     private static void showAdmobFrontAd(final boolean failToFacebook) {
+
+        final com.google.android.gms.ads.InterstitialAd admobFrontAD = new com.google.android.gms.ads.InterstitialAd(context);
         admobFrontAD.setAdListener(new com.google.android.gms.ads.AdListener() {
             @Override
             public void onAdClosed() {
@@ -181,6 +182,8 @@ public class TedAdFront {
         });
         admobFrontAD.setAdUnitId(admobKey);
         admobFrontAD.loadAd(new AdRequest.Builder().build());
+
     }
+
 
 }
