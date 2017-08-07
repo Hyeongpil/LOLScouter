@@ -1,7 +1,16 @@
 package com.hyeongpil.lolscouter.util;
 
 import android.app.Application;
+import android.support.annotation.NonNull;
+import android.support.v7.appcompat.BuildConfig;
 import android.util.Log;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
+import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
+import com.hyeongpil.lolscouter.R;
 
 /**
  * Created by Hyeongpil on 2017-01-13.
@@ -16,6 +25,7 @@ public class GlobalApplication extends Application {
     public void onCreate() {
         super.onCreate();
         instance = this;
+
     }
 
     /**

@@ -26,6 +26,7 @@ public class Stage_1_Activity extends BaseActivity {
         View containView = container.inflate();
         ButterKnife.bind(this);
         GlobalApplication.getInstance().setStartTime(System.currentTimeMillis()); // 시작 시간 측정
+
     }
 
     @OnClick(R.id.tv_one)

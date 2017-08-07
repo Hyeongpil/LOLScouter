@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.hyeongpil.lolscouter.R;
 import com.hyeongpil.lolscouter.model.Score;
+import com.hyeongpil.lolscouter.util.GlobalApplication;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -25,6 +26,7 @@ public class Stage_0_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_stage0);
         ButterKnife.bind(this);
         Score.getInstance().setTotalScore(0);
+        GlobalApplication.getInstance().setTeemoCnt(0);
     }
 
     @OnClick(R.id.tv_stage0_start)
